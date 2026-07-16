@@ -35841,13 +35841,13 @@ public class ChatActivity extends BaseFragment implements
                                 TLRPC.Chat currentChat = MessagesController.getInstance(currentAccount).getChat(-dialogId);
                                 String username = ChatObject.getPublicUsername(currentChat);
                                 if (currentChat != null && username != null) {
-                                    link = "https://t.me/" + username + "/" + messageId + "?t=" + AndroidUtilities.formatTimestamp(finalTimestamp);
+                                    link = "https://teleram.ru/" + username + "/" + messageId + "?t=" + AndroidUtilities.formatTimestamp(finalTimestamp);
                                 }
                             } else {
                                 TLRPC.User user = MessagesController.getInstance(currentAccount).getUser(dialogId);
                                 String username = UserObject.getPublicUsername(user);
                                 if (user != null && username != null) {
-                                    link = "https://t.me/" + username + "/" + messageId + "?t=" + AndroidUtilities.formatTimestamp(finalTimestamp);
+                                    link = "https://teleram.ru/" + username + "/" + messageId + "?t=" + AndroidUtilities.formatTimestamp(finalTimestamp);
                                 }
                             }
                             if (link == null) {
@@ -44053,13 +44053,13 @@ public class ChatActivity extends BaseFragment implements
                     TLRPC.Chat currentChat = MessagesController.getInstance(currentAccount).getChat(-dialogId);
                     String username = ChatObject.getPublicUsername(currentChat);
                     if (currentChat != null && username != null) {
-                        link = "https://t.me/" + username + "/" + messageId + "?t=" + AndroidUtilities.formatTimestamp(timestamp);
+                        link = "https://teleram.ru/" + username + "/" + messageId + "?t=" + AndroidUtilities.formatTimestamp(timestamp);
                     }
                 } else {
                     TLRPC.User user = MessagesController.getInstance(currentAccount).getUser(dialogId);
                     String username = UserObject.getPublicUsername(user);
                     if (user != null && username != null) {
-                        link = "https://t.me/" + username + "/" + messageId + "?t=" + AndroidUtilities.formatTimestamp(timestamp);
+                        link = "https://teleram.ru/" + username + "/" + messageId + "?t=" + AndroidUtilities.formatTimestamp(timestamp);
                     }
                 }
                 if (link == null) {

@@ -517,13 +517,13 @@ public class ProxySettingsActivity extends BaseFragment {
                     params.append("port=").append(URLEncoder.encode(port, "UTF-8"));
                 }
                 if (currentType == 1) {
-                    url = "https://t.me/proxy?";
+                    url = "https://teleram.ru/proxy?";
                     if (params.length() != 0) {
                         params.append("&");
                     }
                     params.append("secret=").append(URLEncoder.encode(secret, "UTF-8"));
                 } else {
-                    url = "https://t.me/socks?";
+                    url = "https://teleram.ru/socks?";
                     if (!TextUtils.isEmpty(user)) {
                         if (params.length() != 0) {
                             params.append("&");

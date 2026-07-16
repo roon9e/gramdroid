@@ -66,8 +66,8 @@ public class LinkCell extends FrameLayout {
 
     public void setSlug(String slug) {
         this.slug = slug;
-        this.link = "https://t.me/giftcode/" + slug;
-        linkView.setText("t.me/giftcode/" + slug);
+        this.link = "https://teleram.ru/giftcode/" + slug;
+        linkView.setText("teleram.ru/giftcode/" + slug);
     }
 
     public void hideSlug(Runnable onHiddenLinkClicked) {
